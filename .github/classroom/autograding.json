@@ -1,8 +1,8 @@
 {
   "tests": [
     {
-      "name": "Test Data Frame",
-      "setup": "",
+      "name": "Test DataFrame",
+      "setup": "sudo -H pip3 install pandas",
       "run": "python -m unittest tests/testDataFrame.py",
       "input": "",
       "output": "",
@@ -11,18 +11,18 @@
       "points": 1
     },
     {
-      "name": "Test Steamy",
-      "setup": "",
-      "run": "python -m unittest tests/testSteamy.py",
+      "name": "Test Time Columns",
+      "setup": "sudo -H pip3 install pandas",
+      "run": "python -m unittest tests/testTimeColumns.py",
       "input": "",
       "output": "",
       "comparison": "exact",
       "timeout": 1,
-      "points": 1
+      "points": 3
     },
     {
       "name": "Test Bright",
-      "setup": "",
+      "setup": "sudo -H pip3 install pandas",
       "run": "python -m unittest tests/testBright.py",
       "input": "",
       "output": "",
@@ -31,14 +31,14 @@
       "points": 1
     },
     {
-      "name": "Test Time Columns",
-      "setup": "",
-      "run": "python -m unittest tests/testTimeColumns.py",
+      "name": "Test Steamy",
+      "setup": "sudo -H pip3 install pandas",
+      "run": "python -m unittest tests/testSteamy.py",
       "input": "",
       "output": "",
       "comparison": "exact",
       "timeout": 1,
-      "points": 3
+      "points": 1
     }
   ]
 }
