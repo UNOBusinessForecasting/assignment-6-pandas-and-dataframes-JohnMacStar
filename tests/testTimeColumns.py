@@ -23,5 +23,6 @@ class testCases(unittest.TestCase):
       day = answer['day_of_week'].equals(occupancy['day_of_week'])
       hour = answer['hour'].equals(occupancy['hour'])
       minute = answer['minute'].equals(occupancy['minute'])
+      print(day, minute, hour)
 
       self.assertTrue(day & hour & minute, "Your 'day', 'minute', and/or 'hour' column is incorrectly built.")
